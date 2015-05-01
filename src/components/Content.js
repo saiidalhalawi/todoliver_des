@@ -9,7 +9,7 @@ require('styles/Content.scss');
 var Content = React.createClass({
   render: function () {
     return (
-        <main className="l-content">
+        <main className="l-main">
           <RouteHandler/>
         </main>
       );

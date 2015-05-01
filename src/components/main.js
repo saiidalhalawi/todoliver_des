@@ -14,7 +14,7 @@ var Guest = require('./Guest.js'),
     WallList = require('./WallList.js'),
     TaskList = require('./TaskList.js');
 
-var contentElem = document.getElementById('content');
+var contentElem = document.getElementById('l-contents');
 
 var Routes = (
   <Route handler={TodoliverDesApp}>

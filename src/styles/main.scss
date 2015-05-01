@@ -1,29 +1,6 @@
 $base_color: #026aa7;
 $content_color: #fff;
 
-html, body {
-  background: $base_color;
-}
-
-/* main */
-
-.l-content {
-  width: 100%;
-  height: 100%;
-  background: $content_color;
-}
-
-.head {
-
-}
-
-/* transitions */
-
-.fade-enter {
-  opacity: 0.01;
-  transition: opacity .5s ease-in;
-}
-
 .fade-enter.fade-enter-active {
   opacity: 1;
 }
