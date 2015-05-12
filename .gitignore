@@ -33,4 +33,4 @@ dist
 /src/main.js
 
 # assets directory
-/public/assets/
+# /public/assets/
