@@ -6,21 +6,22 @@ var ReactTransitionGroup = React.addons.TransitionGroup,
     RouteHandler = Router.RouteHandler,
     Link = Router.Link;
 
-// CSS
+// load Components
+var Header = require('./Header.js');
+
+// load SCSS
 require('../../node_modules/normalize.css/normalize.css');
 require('../styles/main.scss');
 require('../styles/bases/base.scss');
 require('../styles/layouts/common.scss');
-
-var imageURL = require('../images/yeoman.png');
+require('../styles/modules/common.scss');
+require('../styles/states/common.scss');
 
 var TodoliverDesApp = React.createClass({
   render: function() {
     return (
-       <div>
-        <header className='l-header'>
-          <p>Welcome !!</p>
-        </header>
+      <div className="l-wrapper">
+        <Header/>
         <RouteHandler/>
       </div>
     );

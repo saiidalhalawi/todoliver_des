@@ -2,7 +2,26 @@
 
 html, body {
   background: $base_color;
+  font-family: lecton, 'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo, sans-serif;
+  height: 100%;
+  overflow: hidden;
   width: 100%;
-  height: 100%
 }
 
+a {
+  text-decoration: none;
+
+  &:hover {
+    opacity: .6;
+    color: #d4d4d4;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+input {
+  padding: .375rem;
+  border-radius: .5rem;
+  border: solid 2px #cacaca;
+}

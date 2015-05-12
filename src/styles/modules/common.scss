@@ -1,0 +1,52 @@
+
+@import "../main.scss";
+
+.topbar-item {
+  margin: .5rem;
+
+  &.left {
+    float: left;
+  }
+  &.right {
+    float: right;
+  }
+}
+
+.back-to-home {
+  color: $content_color;
+
+  a:visited {
+    color: #fff;
+    font-weight: bolder;
+  }
+  span {
+    border: solid 2px #fff;
+    border-radius: .5rem;
+    display: inline-block;
+    padding: .3rem;
+  }
+}
+
+.searhbox {
+  color: $func_font_color;
+}
+
+.service-name {
+  color: $func_font_color;
+  font-size: 1.75rem;
+  font-family: 'PT Sans Narrow', lekton, sans-serif;
+  left: 50%;
+  margin: .35rem .75rem;
+  opacity: .5;
+  position: absolute;
+  transition: opacity ease-in 85ms;
+  top: 1.25rem;
+}
+
+.account-menu {
+  background: linear-gradient(to bottom,rgba(255,255,255,.3) 0,rgba(255,255,255,.2) 100%);
+  border-radius: .5rem;
+  display: inline-block;
+  margin: .5rem;
+  padding: .5rem 1rem;
+}

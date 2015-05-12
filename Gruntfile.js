@@ -17,10 +17,26 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: pkgConfig,
 
+    path :
+      app  : 'src'
+      dist : 'public'
+      assets : 'assets'
+      tmp  : '.tmp'
+
     webpack: {
       options: webpackDistConfig,
       dist: {
         cache: false
+      }
+    },
+
+    autoprefixer: {
+      sourcemap: {
+         options: {
+            map: true
+        },
+        src: 'node_modules/material-ui-sass/material-ui.scss',
+        dest: 'public/assets/material-ui.css'
       }
     },
 
@@ -88,7 +104,7 @@ module.exports = function (grunt) {
             flatten: true,
             expand: true,
             src: ['<%= pkg.src %>/images/*'],
-            dest: '<%= pkg.dist %>/images/'
+            dest: '<%= pkg.dist.assets %>/images/'
           }
         ]
       }
@@ -119,7 +135,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('test', ['karma']);
 
-  grunt.registerTask('build', ['clean', 'copy', 'webpack']);
+  grunt.registerTask('build', ['clean', 'copy', 'webpack', 'autoprefixer']);
 
   grunt.registerTask('default', []);
 };

@@ -1,6 +1,6 @@
 {
   "generator-react-webpack": {
-    "app-name": "main",
+    "app-name": "accountMenu",
     "architecture": "flux",
     "styles-language": "scss"
   }
