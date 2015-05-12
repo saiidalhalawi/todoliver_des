@@ -17,11 +17,12 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: pkgConfig,
 
-    path :
-      app  : 'src'
-      dist : 'public'
-      assets : 'assets'
+    path : {
+      app  : 'src',
+      dist : 'public',
+      assets : 'assets',
       tmp  : '.tmp'
+    },
 
     webpack: {
       options: webpackDistConfig,
