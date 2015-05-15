@@ -13,7 +13,7 @@
   .l-header {
     background: rgba(0,0,0,.15);
     border-radius: .5rem;
-    height: 3.5rem;
+    height: 8%;
     margin: 1rem;
 
     & a:visited {
@@ -22,7 +22,20 @@
   }
   .l-main {
     @extend .l-header;
-    height: 80%;
+    height: 90%;
+
+    section {
+      height: 90%;
+      width: 100%;
+
+      .l-login {
+        @extend .l-main;
+        background-color: $content_color;
+        font-size: 1.25rem;
+        height: 75%;
+        padding: 2.5rem;
+      }
+    }
   }
 }
 
