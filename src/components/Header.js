@@ -1,7 +1,7 @@
 'use strict';
 
-var React = require('react/addons');
-var Router = require('react-router'),
+var React = require('react/addons'),
+    Router = require('react-router'),
     Link = Router.Link;
 
 require('styles/Header.scss');

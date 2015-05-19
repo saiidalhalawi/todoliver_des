@@ -1,0 +1,24 @@
+@import "../main.scss";
+
+.walllist {
+  list-style: none;
+
+  &>li {
+    border: solid 1px #1f1f1f;
+    border-radius: .75rem;
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: bold;
+    height: 5rem;
+    margin: 0 1.5rem;
+    padding: .75rem;
+    width: 11rem;
+    word-break: break-all;
+  }
+  &>li:not(:last-child) {
+    background-color: $base_color;
+  }
+}
+
+
+

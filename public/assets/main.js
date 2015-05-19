@@ -45,7 +45,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "6934bb72fbcd17a21491";
+/******/ 	var hotCurrentHash = "a239da65ad63e437c1df";
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = [];
 /******/ 	
@@ -526,45 +526,12 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(2);
-	module.exports = __webpack_require__(1);
+	__webpack_require__(1);
+	module.exports = __webpack_require__(2);
 
 
 /***/ },
 /* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(12), RootInstanceProvider = __webpack_require__(3), ReactMount = __webpack_require__(11), React = __webpack_require__(14); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } (function () {
-
-	"use strict";
-
-	var TodoliverDesApp = __webpack_require__(5),
-	    React = __webpack_require__(14),
-	    Router = __webpack_require__(17),
-	    RouteHandler = Router.RouteHandler,
-	    Route = Router.Route,
-	    Link = Router.Link,
-	    DefaultRoute = Router.DefaultRoute;
-
-	/* Specified Components */
-	var Guest = __webpack_require__(6),
-	    Content = __webpack_require__(7),
-	    WallList = __webpack_require__(8),
-	    TaskList = __webpack_require__(9);
-
-	var contentElem = document.getElementById("l-contents");
-
-	var Routes = React.createElement(Route, { handler: TodoliverDesApp }, React.createElement(Route, { name: "/", handler: Content }, React.createElement(Route, { name: "walls", path: "walls", handler: WallList }), React.createElement(Route, { name: "tasks", path: "tasks", handler: TaskList }), React.createElement(DefaultRoute, { handler: Guest })));
-
-	Router.run(Routes, function (Handler) {
-	    React.render(React.createElement(Handler, null), contentElem);
-	});
-
-	/* REACT HOT LOADER */ }).call(this); if (true) { (function () { module.hot.dispose(function (data) { data.makeHot = module.makeHot; }); if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(4), foundReactClasses = false; if (makeExportsHot(module, __webpack_require__(14))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "main.js" + ": " + err.message); } }); } } })(); }
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)(module)))
-
-/***/ },
-/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 	if(true) {
@@ -648,6 +615,39 @@
 		throw new Error("[HMR] Hot Module Replacement is disabled");
 	}
 
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(12), RootInstanceProvider = __webpack_require__(3), ReactMount = __webpack_require__(11), React = __webpack_require__(14); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } (function () {
+
+	"use strict";
+
+	var TodoliverDesApp = __webpack_require__(5),
+	    React = __webpack_require__(14),
+	    Router = __webpack_require__(17),
+	    RouteHandler = Router.RouteHandler,
+	    Route = Router.Route,
+	    Link = Router.Link,
+	    DefaultRoute = Router.DefaultRoute;
+
+	/* Specified Components */
+	var Guest = __webpack_require__(6),
+	    Content = __webpack_require__(7),
+	    WallList = __webpack_require__(8),
+	    TaskList = __webpack_require__(9);
+
+	var contentElem = document.getElementById("l-contents");
+
+	var Routes = React.createElement(Route, { handler: TodoliverDesApp }, React.createElement(Route, { name: "/", handler: Content }, React.createElement(Route, { name: "walls", path: "walls", handler: WallList }), React.createElement(Route, { name: "tasks", path: "tasks", handler: TaskList }), React.createElement(DefaultRoute, { handler: Guest })));
+
+	Router.run(Routes, function (Handler) {
+	    React.render(React.createElement(Handler, null), contentElem);
+	});
+
+	/* REACT HOT LOADER */ }).call(this); if (true) { (function () { module.hot.dispose(function (data) { data.makeHot = module.makeHot; }); if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(4), foundReactClasses = false; if (makeExportsHot(module, __webpack_require__(14))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "main.js" + ": " + err.message); } }); } } })(); }
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)(module)))
 
 /***/ },
 /* 3 */
@@ -768,9 +768,9 @@
 	// load SCSS
 	__webpack_require__(101);
 	__webpack_require__(103);
+	__webpack_require__(111);
 	__webpack_require__(113);
 	__webpack_require__(115);
-	__webpack_require__(117);
 	__webpack_require__(119);
 
 	var TodoliverDesApp = React.createClass({ displayName: "TodoliverDesApp",
@@ -846,11 +846,11 @@
 	    Router = __webpack_require__(17),
 	    Link = Router.Link;
 
-	__webpack_require__(109);
+	__webpack_require__(117);
 
 	var WallList = React.createClass({ displayName: "WallList",
 	  render: function render() {
-	    return React.createElement("section", { "class": "l-content" }, React.createElement("h1", null, "My boards"), React.createElement("ul", null, React.createElement("li", null, React.createElement(Link, { to: "tasks" }, "AAAA")), React.createElement("li", null, React.createElement(Link, { to: "tasks" }, "BBBB")), React.createElement("li", null, "Create new board ....")));
+	    return React.createElement("section", null, React.createElement("h1", { className: "article-title" }, "My boards"), React.createElement("div", { className: "l-login" }, React.createElement("ul", { className: "walllist" }, React.createElement("li", null, React.createElement(Link, { to: "tasks" }, "AAAA")), React.createElement("li", null, React.createElement(Link, { to: "tasks" }, "BBBB")), React.createElement("li", null, "Create new board ...."))));
 	  }
 	});
 
@@ -869,7 +869,7 @@
 
 	var React = __webpack_require__(41);
 
-	__webpack_require__(111);
+	__webpack_require__(109);
 
 	var TaskList = React.createClass({ displayName: "TaskList",
 	  render: function render() {
@@ -5552,8 +5552,8 @@
 
 	"use strict";
 
-	var React = __webpack_require__(41);
-	var Router = __webpack_require__(17),
+	var React = __webpack_require__(41),
+	    Router = __webpack_require__(17),
 	    Link = Router.Link;
 
 	__webpack_require__(133);
@@ -13396,7 +13396,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(187)();
-	exports.push([module.id, ".WallList {\n  border: 1px dashed #f00;\n}\n", ""]);
+	exports.push([module.id, ".TaskList {\n  border: 1px dashed #f00;\n}\n", ""]);
 
 /***/ },
 /* 111 */
@@ -13426,7 +13426,8 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(187)();
-	exports.push([module.id, ".TaskList {\n  border: 1px dashed #f00;\n}\n", ""]);
+	exports.push([module.id, "@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);", ""]);
+	exports.push([module.id, "\n.fade-enter.fade-enter-active {\n  opacity: 1;\n}\n\n.fade-leave {\n  opacity: 1;\n  transition: opacity 0.5s ease-in;\n}\n\n.fade-leave.fade-leave-active {\n  opacity: 0.01;\n}\n\nhtml, body {\n  background: #026aa7;\n  font-family: lecton, 'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo, sans-serif;\n  height: 100%;\n  overflow: hidden;\n  width: 100%;\n}\n\na {\n  text-decoration: none;\n}\n\na:hover {\n  opacity: .6;\n  color: #d4d4d4;\n}\n\na:visited {\n  text-decoration: none;\n}\n\ninput {\n  border-radius: .5rem;\n  border: solid 2px #cacaca;\n  font-style: oblique;\n  padding: .375rem;\n}\n", ""]);
 
 /***/ },
 /* 113 */
@@ -13457,7 +13458,7 @@
 
 	exports = module.exports = __webpack_require__(187)();
 	exports.push([module.id, "@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);", ""]);
-	exports.push([module.id, "\n.fade-enter.fade-enter-active {\n  opacity: 1;\n}\n\n.fade-leave {\n  opacity: 1;\n  transition: opacity 0.5s ease-in;\n}\n\n.fade-leave.fade-leave-active {\n  opacity: 0.01;\n}\n\nhtml, body {\n  background: #026aa7;\n  font-family: lecton, 'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo, sans-serif;\n  height: 100%;\n  overflow: hidden;\n  width: 100%;\n}\n\na {\n  text-decoration: none;\n}\n\na:hover {\n  opacity: .6;\n  color: #d4d4d4;\n}\n\na:visited {\n  text-decoration: none;\n}\n\ninput {\n  border-radius: .5rem;\n  border: solid 2px #cacaca;\n  font-style: oblique;\n  padding: .375rem;\n}\n", ""]);
+	exports.push([module.id, "\n.fade-enter.fade-enter-active {\n  opacity: 1;\n}\n\n.fade-leave {\n  opacity: 1;\n  transition: opacity 0.5s ease-in;\n}\n\n.fade-leave.fade-leave-active {\n  opacity: 0.01;\n}\n\n#l-contents {\n  color: #333;\n  height: 95%;\n  margin: 0;\n  width: 100%;\n}\n\n#l-contents .l-wrapper {\n  height: 100%;\n}\n\n#l-contents .l-header, #l-contents .l-main, #l-contents .l-main section .l-login {\n  background: rgba(0, 0, 0, 0.15);\n  border-radius: .5rem;\n  height: 8%;\n  margin: 1rem;\n}\n\n#l-contents .l-header a:visited, #l-contents .l-main a:visited {\n  color: #fff;\n}\n\n#l-contents .l-main, #l-contents .l-main section .l-login {\n  height: 90%;\n}\n\n#l-contents .l-main section, #l-contents .l-main section .l-login section {\n  height: 90%;\n  width: 100%;\n}\n\n#l-contents .l-main section .l-login {\n  background-color: #fff;\n  font-size: 1.25rem;\n  height: 75%;\n  padding: 2.5rem;\n}\n", ""]);
 
 /***/ },
 /* 115 */
@@ -13488,7 +13489,7 @@
 
 	exports = module.exports = __webpack_require__(187)();
 	exports.push([module.id, "@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);", ""]);
-	exports.push([module.id, "\n.fade-enter.fade-enter-active {\n  opacity: 1;\n}\n\n.fade-leave {\n  opacity: 1;\n  transition: opacity 0.5s ease-in;\n}\n\n.fade-leave.fade-leave-active {\n  opacity: 0.01;\n}\n\n#l-contents {\n  color: #333;\n  height: 95%;\n  margin: 0;\n  width: 100%;\n}\n\n#l-contents .l-wrapper {\n  height: 100%;\n}\n\n#l-contents .l-header, #l-contents .l-main, #l-contents .l-main section .l-login {\n  background: rgba(0, 0, 0, 0.15);\n  border-radius: .5rem;\n  height: 8%;\n  margin: 1rem;\n}\n\n#l-contents .l-header a:visited, #l-contents .l-main a:visited {\n  color: #fff;\n}\n\n#l-contents .l-main, #l-contents .l-main section .l-login {\n  height: 90%;\n}\n\n#l-contents .l-main section, #l-contents .l-main section .l-login section {\n  height: 90%;\n  width: 100%;\n}\n\n#l-contents .l-main section .l-login {\n  background-color: #fff;\n  font-size: 1.25rem;\n  height: 75%;\n  padding: 2.5rem;\n}\n", ""]);
+	exports.push([module.id, "\n.fade-enter.fade-enter-active {\n  opacity: 1;\n}\n\n.fade-leave {\n  opacity: 1;\n  transition: opacity 0.5s ease-in;\n}\n\n.fade-leave.fade-leave-active {\n  opacity: 0.01;\n}\n\n.topbar-item {\n  margin: .5rem;\n}\n\n.topbar-item.left {\n  float: left;\n}\n\n.topbar-item.right {\n  float: right;\n}\n\n.back-to-home {\n  color: #fff;\n}\n\n.back-to-home a:visited {\n  color: #fff;\n  font-weight: bolder;\n}\n\n.back-to-home span {\n  border: solid 2px #fff;\n  border-radius: .5rem;\n  display: inline-block;\n  padding: .3rem;\n}\n\n.searhbox {\n  color: #fff;\n}\n\n.service-name {\n  color: #fff;\n  font-size: 1.75rem;\n  font-family: 'PT Sans Narrow', lekton, sans-serif;\n  left: 50%;\n  margin: 0.35rem 0.75rem;\n  opacity: .5;\n  position: absolute;\n  transition: opacity ease-in 85ms;\n  top: 1.25rem;\n}\n\n.article-title {\n  color: #fff;\n  margin-left: 2rem;\n}\n\n.account-menu {\n  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0, rgba(255, 255, 255, 0.2) 100%);\n  border-radius: .5rem;\n  display: inline-block;\n  margin: .5rem;\n  padding: 0.5rem 1rem;\n}\n\n.input-box {\n  margin: 0 auto;\n  width: 60%;\n}\n\n.input-box fieldset {\n  border-radius: .75rem;\n  padding: 1.5rem;\n}\n\n.input-box li {\n  list-style: none;\n  margin: 0.75rem 0;\n}\n\n.input-box .submit-button {\n  transition: 0.25s ease-in-out;\n  border-radius: .5rem;\n  background: rgba(35, 112, 208, 0.86);\n  border-color: rgba(94, 113, 222, 0.99);\n  color: #fefefe;\n  padding: 0.35rem 1.75rem;\n}\n", ""]);
 
 /***/ },
 /* 117 */
@@ -13519,7 +13520,7 @@
 
 	exports = module.exports = __webpack_require__(187)();
 	exports.push([module.id, "@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);", ""]);
-	exports.push([module.id, "\n.fade-enter.fade-enter-active {\n  opacity: 1;\n}\n\n.fade-leave {\n  opacity: 1;\n  transition: opacity 0.5s ease-in;\n}\n\n.fade-leave.fade-leave-active {\n  opacity: 0.01;\n}\n\n.topbar-item {\n  margin: .5rem;\n}\n\n.topbar-item.left {\n  float: left;\n}\n\n.topbar-item.right {\n  float: right;\n}\n\n.back-to-home {\n  color: #fff;\n}\n\n.back-to-home a:visited {\n  color: #fff;\n  font-weight: bolder;\n}\n\n.back-to-home span {\n  border: solid 2px #fff;\n  border-radius: .5rem;\n  display: inline-block;\n  padding: .3rem;\n}\n\n.searhbox {\n  color: #fff;\n}\n\n.service-name {\n  color: #fff;\n  font-size: 1.75rem;\n  font-family: 'PT Sans Narrow', lekton, sans-serif;\n  left: 50%;\n  margin: 0.35rem 0.75rem;\n  opacity: .5;\n  position: absolute;\n  transition: opacity ease-in 85ms;\n  top: 1.25rem;\n}\n\n.article-title {\n  color: #fff;\n  margin-left: 2rem;\n}\n\n.account-menu {\n  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0, rgba(255, 255, 255, 0.2) 100%);\n  border-radius: .5rem;\n  display: inline-block;\n  margin: .5rem;\n  padding: 0.5rem 1rem;\n}\n\n.input-box {\n  margin: 0 auto;\n  width: 60%;\n}\n\n.input-box fieldset {\n  border-radius: .75rem;\n  padding: 1.5rem;\n}\n\n.input-box li {\n  list-style: none;\n  margin: 0.75rem 0;\n}\n\n.input-box .submit-button {\n  transition: 0.25s ease-in-out;\n  border-radius: .5rem;\n  background: rgba(35, 112, 208, 0.86);\n  border-color: rgba(94, 113, 222, 0.99);\n  color: #fefefe;\n  padding: 0.35rem 1.75rem;\n}\n", ""]);
+	exports.push([module.id, "\n.fade-enter.fade-enter-active {\n  opacity: 1;\n}\n\n.fade-leave {\n  opacity: 1;\n  transition: opacity 0.5s ease-in;\n}\n\n.fade-leave.fade-leave-active {\n  opacity: 0.01;\n}\n\n.walllist {\n  list-style: none;\n}\n\n.walllist > li {\n  border: solid 1px #1f1f1f;\n  border-radius: .75rem;\n  display: inline-block;\n  font-size: 1.25rem;\n  font-weight: bold;\n  height: 5rem;\n  margin: 0 1.5rem;\n  padding: .75rem;\n  width: 11rem;\n}\n\n.walllist > li:not(:last-child) {\n  background-color: #026aa7;\n}\n", ""]);
 
 /***/ },
 /* 119 */
